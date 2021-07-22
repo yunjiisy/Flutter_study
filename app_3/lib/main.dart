@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "BBANTO",
       home: Grade( ),
     );
@@ -39,6 +40,13 @@ class Grade extends StatelessWidget {
                 radius:60.0 ,
                 backgroundColor: Colors.white,
               ),
+            ),
+            Divider(
+              //디바이더의 위와 아래의 간격 (각각30px씩 떨어짐)
+              height: 60.0,
+              color: Colors.grey[850],
+              thickness: 0.5,
+              endIndent: 30.0,
             ),
             Text("NAME",
             style: TextStyle(
@@ -122,6 +130,13 @@ class Grade extends StatelessWidget {
                 )
               ],
             ),
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/icon2.png'),
+                radius: 40.0,
+                backgroundColor: Colors.amber[800],
+              ) ,
+            )
           ],
         ),
         ),
