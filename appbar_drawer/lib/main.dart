@@ -20,6 +20,8 @@ class MyPage extends StatelessWidget {
   const MyPage({Key? key}) : super(key: key);
 
   @override
+  //buildContext 
+  //build함수는 scaffold를 함수를 리턴하는데 이때 위젯트리 상에서 어디에 위치하는가에 대한 정보를 가지고있는 context를 넣어서 리턴해줌.
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -57,20 +59,67 @@ class MyPage extends StatelessWidget {
                 backgroundImage: AssetImage('assets/icon.png'),
                 backgroundColor: Colors.white,
               ),
-              accountName: Text('bbanto'),
+              //다른계정이미지들
+              otherAccountsPictures: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/icon2.png'),
+                ),
+                //  CircleAvatar(
+                //   backgroundColor: Colors.white,
+                //   backgroundImage: AssetImage('assets/icon2.png'),
+                // )
+              ],
+              accountName: Text('isy'),
               accountEmail: Text('dbswl330@gmail.com'),
               onDetailsPressed: () {
                 print('arrow is clicked');
               },
               decoration: BoxDecoration(
-                color: Colors.red[200],
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(40.0),
-                  bottomRight: Radius.circular(40.0)
-                )
+                  color: Colors.red[200],
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(40.0),
+                      bottomRight: Radius.circular(40.0))),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.home,
+                color: Colors.grey[850],
+              ),
+              title: Text('Home'),
+              onTap: () {
+                print('Home is clicked');
+              },
+              trailing: Icon(
+                Icons.add
+              ),
+            ),
+             ListTile(
+              leading: Icon(
+                Icons.settings,
+                color: Colors.grey[850],
+              ),
+              title: Text('setting'),
+              onTap: () {
+                print('setting is clicked');
+              },
+              trailing: Icon(
+                Icons.add
+              ),
+            ),
+             ListTile(
+              leading: Icon(
+                Icons.question_answer,
+                color: Colors.grey[850],
+              ),
+              title: Text('Q&A'),
+              onTap: () {
+                print('Q&A is clicked');
+              },
+              trailing: Icon(
+                Icons.add
               ),
             )
-             
           ],
         ),
       ),
