@@ -1,0 +1,190 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "appbar",
+      "cwd": "appbar",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "appbar (profile mode)",
+      "cwd": "appbar",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "appbar_drawer",
+      "cwd": "appbar_drawer",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "appbar_drawer (profile mode)",
+      "cwd": "appbar_drawer",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "app_2",
+      "cwd": "app_2",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "app_2 (profile mode)",
+      "cwd": "app_2",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "app_3",
+      "cwd": "app_3",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "app_3 (profile mode)",
+      "cwd": "app_3",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "column_roe_2",
+      "cwd": "column_roe_2",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "column_roe_2 (profile mode)",
+      "cwd": "column_roe_2",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "column_row",
+      "cwd": "column_row",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "column_row (profile mode)",
+      "cwd": "column_row",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "container",
+      "cwd": "container",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "container (profile mode)",
+      "cwd": "container",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "first_app",
+      "cwd": "first_app",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "first_app (profile mode)",
+      "cwd": "first_app",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "myapp",
+      "cwd": "myapp",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "myapp (profile mode)",
+      "cwd": "myapp",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "navigator",
+      "cwd": "navigator",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "navigator (profile mode)",
+      "cwd": "navigator",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "navigator_2",
+      "cwd": "navigator_2",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "navigator_2 (profile mode)",
+      "cwd": "navigator_2",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "snackbar",
+      "cwd": "snackbar",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "snackbar (profile mode)",
+      "cwd": "snackbar",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "snackbar_2",
+      "cwd": "snackbar_2",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "snackbar_2 (profile mode)",
+      "cwd": "snackbar_2",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "toastmessage",
+      "cwd": "toastmessage",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "toastmessage (profile mode)",
+      "cwd": "toastmessage",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    }
+  ]
+}
