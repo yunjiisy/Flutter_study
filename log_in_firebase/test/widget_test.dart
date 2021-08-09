@@ -1,30 +1,61 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility that Flutter provides. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-
-import 'package:log_in_firebase/main.dart';
+import 'dart:io';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+  showData();
+}
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+void showData() async{
+  startTask();
+  //accesssData를 호추 할 때 먼저 실행이 끝날 때 까지 기다리라는 의미
+  String account = await accessData();
+  fetchData(account);
+}
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+//Synchronize
+// void startTask() {
+//   String info1 = '요청 수행 시작';
+//   print(info1);
+// }
+// //실행에 시간이 걸리든 그렇지 않던 순서가 되면 무조건 실행 됨.(순서대로!)
+// void accessData() {
+//   Duration time = Duration(seconds: 3);
+//   sleep(time);
+//   String info2 = '데이터에 접속중';
+//   print(info2);
+// }
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-  });
+// void fetchData() {
+//   String info3 = '잔액은 8500만원 입니다';
+//   print(info3);
+// }
+
+void startTask() {
+  String info1 = '요청 수행 시작';
+  print(info1);
+}
+
+//실행에 시간이 걸리든 그렇지 않던 순서가 되면 무조건 실행 됨.(순서대로!)
+//asynk ->중괄호 앞에 붙여줌, await키워드 사용 가능
+Future<String> accessData() async{
+  String account = '8500만원';
+
+  Duration time = Duration(seconds: 3);
+
+  if (time.inSeconds > 2) {
+    // sleep(time);
+    await Future.delayed(time, () {
+      
+      print(account);
+    });
+  } else {
+    String info2 = '데이터를 가져왔습니다.';
+    print(info2);
+  }
+
+  return account;
+}
+
+void fetchData( String account) {
+  String info3 = '잔액은 $account 입니다';
+  print(info3);
 }
