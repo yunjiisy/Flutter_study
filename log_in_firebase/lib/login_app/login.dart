@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:log_in_firebase/my_button/my_button.dart';
 
 class Login extends StatelessWidget {
-  const Login({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

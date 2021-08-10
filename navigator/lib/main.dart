@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +18,6 @@ class MyApp extends StatelessWidget {
 
 //First Route
 class FirstPage extends StatelessWidget {
-  const FirstPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context2) {
@@ -45,7 +43,6 @@ class FirstPage extends StatelessWidget {
 //route는 반드시 material앱 위젯 아래에 child로 생선 되어야만 함!!(모든 위젯)
 //Second Route
 class SecondPage extends StatelessWidget {
-  const SecondPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext ctx) {
