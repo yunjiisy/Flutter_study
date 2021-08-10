@@ -4,7 +4,6 @@ void main() => runApp(MyApp());
 
 
 class MyApp extends StatelessWidget {
-  const MyApp({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +15,6 @@ class MyApp extends StatelessWidget {
   }
 }
 class Grade extends StatelessWidget {
-  const Grade({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
