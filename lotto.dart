@@ -1,22 +1,24 @@
 import 'dart:math';
 
-List<int> lottoNumber() {
-  var random = Random();
+Set<int> lottoNumber() {
+  final random = Random();
 
-  List<int> lottoList = [];
-  var num;
+  final Set<int> lottoSet = {};
+  //var num;
 
-  for (int i = 0; i < 6; i++) {
-    num = random.nextInt(45) + 1;
-    lottoList.add(num);
+//중복이 일어나지 않음(Set는 중복 허용 x)
+  while (lottoSet.length < 6) {
+    //num = random.nextInt(45) + 1;
+    lottoSet.add(random.nextInt(45) + 1);
   }
 
   print('당첨번호');
-  print(lottoList);
+  print(lottoSet.toList());
 
-  return lottoList;
+  return lottoSet;
 }
 
+//중복이 일어남->위의 lottoNumbe와 같이 바꾸어 주면 됨(while사용)
 List<int> myNumber() {
   var random = Random();
 
@@ -49,7 +51,7 @@ void checkNumber(List lottoList, List myList) {
 }
 
 void main() {
-  List<int> lottoFinal = lottoNumber();
+  List<int> lottoFinal = lottoNumber().toList();
   List<int> myFinal = myNumber();
 
   checkNumber(lottoFinal, myFinal);
