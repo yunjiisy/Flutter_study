@@ -3,11 +3,11 @@ import 'package:log_in_firebase/login_app/login.dart';
 
 class MyButton extends StatelessWidget {
   MyButton(
-      {this.image,
-       this.text,
-       this.color,
-       this.radius,
-       this.onPressed});
+      {required this.image,
+       required this.text,
+       required this.color,
+       required this.radius,
+       required this.onPressed});
 
   //재사용을 위한 속성을 지정
   //속성이 필요로 하는 요소에 따라 변수의 타입을 지정
